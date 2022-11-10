@@ -20,7 +20,7 @@ class Product extends BaseProduct implements ColorInterface
         return new ProductTranslation();
     }
 
-    public function setColor(?string $color): ColorInterface
+    public function setColor(?string $color): Product
     {
         $this->color = $color;
         return $this;
