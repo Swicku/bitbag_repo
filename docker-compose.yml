@@ -32,7 +32,7 @@ services:
       - MYSQL_USER=sylius
       - MYSQL_PASSWORD=${MYSQL_PASSWORD:-nopassword}
     volumes:
-      - mysql-data:/var/lib/mysql:rw
+      - mysql-data2:/var/lib/mysql:rw
       # you may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
       # - ./docker/mysql/data:/var/lib/mysql:rw,delegated
     ports:
@@ -85,5 +85,5 @@ services:
       - "${MAILHOG_PORT:-8025}:8025"
 
 volumes:
-  mysql-data:
+  mysql-data2:
   public-media:

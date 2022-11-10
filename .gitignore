@@ -1,3 +1,6 @@
+.DS_Store
+.idea
+
 /public/assets
 /public/css
 /public/js
