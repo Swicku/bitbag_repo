@@ -18,6 +18,7 @@ class ProductTypeExtension extends AbstractTypeExtension
             ->add('color', ChoiceType::class, [
                 'label' => 'Color',
                 'choices' => [
+                    'none' => null,
                     'red' => 'red',
                     'green' => 'green',
                     'blue' => 'blue'
